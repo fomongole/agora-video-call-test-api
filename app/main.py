@@ -20,7 +20,7 @@ active_calls = {}
 
 @app.get("/")
 def health_check():
-    return {"status": "online", "service": "AfroDoctor Call API"}
+    return {"status": "online", "service": "Afrodoctor Call API"}
 
 @app.post("/calls/{call_id}/join", response_model=BaseApiResponse)
 async def join_call(call_id: int):
